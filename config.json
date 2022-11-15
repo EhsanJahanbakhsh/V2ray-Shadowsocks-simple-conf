@@ -1,0 +1,42 @@
+{
+"inbounds": [
+    {
+      "port": 443,
+      "listen": "0.0.0.0",
+      "protocol": "shadowsocks",
+      "level": 0,
+      "ota": false,
+      "network": "tcp",
+      "settings": {
+        "method": "chacha20-ietf-poly1305",
+        "password": "YOUR PASSWORD"
+      }
+    }
+  ],
+  "outbounds": [
+    {
+      "protocol": "vmess",
+      "settings": {
+        "vnext": [
+          {
+            "address": "v2ray.wikidevops.ir",
+            "port": 443,
+            "users": [
+              {
+                "id": "9ca04de3-zb88-431a-92a4-7c977e01c530"
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/bz510dc5518/"
+        }
+      }
+    }
+  ]
+}
+
